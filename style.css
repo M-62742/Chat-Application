@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgb(92, 100, 221), rgb(246, 196, 246));
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+}
+
+.container {
+    max-width: 900px;
+    background-color: #fff;
+    margin: auto;
+    overflow: auto;
+    height: 60vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.message-list {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.messageleft {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+    float: left;
+    clear: both;
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+.messageright {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+    float: right;
+    clear: both;
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+.send {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 900px; /* Fixed width */
+    margin: 0 auto; /* Center the section in the container */
+    border-radius: 0 0 8px 8px;
+}
+
+
+#sendcontainer {
+    flex: 1;
+    display: flex;
+    width: 100px; /* Ensure full width of the container */
+}
+
+#messageinp {
+    width: 100%; /* Make input field take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between input and button */
+    font-size: 16px;
+    outline: none;
+}
+
+#messageinp:focus {
+    border-color: #007bff;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    background-color: #004494;
+}
